@@ -1,12 +1,17 @@
-# twittersearcherproject
-Twitter hashtag searcher for Software Engineering 1 class
+# TwitterSearchProject
 
-csproject/templates/twitterscraper/ contains the html files
+Group project for Software Engineering 1
 
-csproject/static contains static files such as images, javascript files, etc
+The following Python libraries are required:
+pip
+django
+wordcloud
+numpy
+pillow 
+npm
 
-csproject/urls.py and twitterscraper/urls.py contains the url mapping
+A twitter API key and OAUTH must be inserted into twitterscraper/scripts/tweetRetriever.py
 
-twitterscraper/views.py contains the code that the urls are mapped to
-
-twitterscraper/scripts contains the core python scripts that will be searching through the twitter API
+To run project locally, in the main directory run the Django server by typing:
+python3 manage.py runserver
+and then go to 127.0.0.1:8000 to access page.

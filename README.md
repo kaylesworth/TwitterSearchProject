@@ -6,6 +6,8 @@ The following Python libraries are required:
 
 pip
 
+twython
+
 django
 
 wordcloud

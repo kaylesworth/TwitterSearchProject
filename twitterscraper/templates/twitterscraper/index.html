@@ -1,0 +1,20 @@
+{% extends "twitterscraper/base.html" %}
+{% block body_block %}
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 jumbotron">
+                <h2>Twitter Hashtag Search</h2>
+                <p>Enter a hashtag you're interested in and we will give you all the tweets containing that hashtag. </p>
+                <form name="searchForm" method="POST" action="/search/" onsubmit="return validateForm()">
+                    <div class="form-group has-feedback">
+                        <label class="sr-only" title="Search"></label>
+                        <input name="user_hashtag_input" id="id_new_item"
+                               class="form-control input-lg searchBox"
+                               placeholder="Enter a #hashtag"/>
+                        <i class="glyphicon glyphicon-search form-control-feedback"></i>
+                        {% csrf_token %}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

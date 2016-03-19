@@ -20,7 +20,7 @@ npm
 
 A twitter API key and OAUTH must be inserted into twitterscraper/scripts/tweetRetriever.py
 
-To run project locally, in the main directory run the Django server by typing:
+To run project locally, in the main directory run the Django server by typing in command prompt or console:
 
 python3 manage.py runserver
 
